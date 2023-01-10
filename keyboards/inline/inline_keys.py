@@ -1,5 +1,5 @@
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton
-from aiogram_inline_paginations.paginator import Paginator
+# from aiogram_inline_paginations.paginator import Paginator
 from aiogram.utils.callback_data import CallbackData
 
 sura_names = {
@@ -28,7 +28,7 @@ sura_callback = CallbackData("suralar","name")
 sura_inline = InlineKeyboardMarkup(row_width=2)
 for tx, cd in sura_names.items():
     sura_inline.insert(InlineKeyboardButton(text=tx, callback_data=sura_callback.new(name=cd)))
-paginator = Paginator(data=sura_inline, size=62)
+# paginator = Paginator(data=sura_inline, size=62)
 
 
 
