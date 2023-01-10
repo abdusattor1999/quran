@@ -15,7 +15,7 @@ def tafsir_request(sura, oyat=None):
 
 @dp.message_handler(text="📖 Qur'on tafsiri")
 async def tafsir_bosildi(ms:Message):
-    await ms.answer("Surani tanlang", reply_markup=sura_inline))
+    await ms.answer("Surani tanlang", reply_markup=sura_inline)
 
 
 @dp.callback_query_handler(sura_callback.filter())
